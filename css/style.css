@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     grid-template-rows: repeat(auto-fill,20rem);
-    gap: 2rem;
+    gap: 1.2rem;
 }
 .color-box{
  /*   border: 1px solid black;*/
@@ -16,7 +16,7 @@
 .color-palette{
     height: 50%;
     width:100%;
-    background-color: blue ;
+    background-color: black;
 }
 .color-sec-header{
     text-align: center;
@@ -27,13 +27,31 @@
 .generate-color-btn{
 /*    background: conic-gradient(20deg,pink,red,blue);*/
     position: relative;
-    left: 10rem;
-    right: 0;
-    background: linear-gradient(20deg, #fb4e4e, #3838ff, #06cc06);
+    left: 40%;
+    background: linear-gradient(20deg,
+    #0fe10f,
+    #3d3df8,
+    #fb4141
+    );
     border: none;
     box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.35);
     font-size: 1.5rem;
-    color: white;
+   backdrop-filter: blur(100);
     text-align: center;
-    margin: 20px;
+    color: white;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
 }
+.spin{
+    animation: spin 3s ;
+}
+/*
+@keyframes spin{
+    0%{
+        transform: rotate(2deg);
+    }
+    100%{
+       transform: rotate(20deg);
+    }
+}*/
