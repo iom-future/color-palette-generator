@@ -6,7 +6,7 @@
 .color-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    grid-template-rows: repeat(auto-fill,20rem);
+    grid-template-rows: repeat(auto-fill,300px);
     gap: 1.2rem;
 }
 .color-box{
@@ -21,7 +21,7 @@
 .color-sec-header{
     text-align: center;
     font-family: "Moronic Misfire (BRK)";
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .generate-color-btn{

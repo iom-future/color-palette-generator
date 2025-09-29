@@ -4,8 +4,10 @@
 //Get required Elements
 const colorBtn = document.querySelector('.generate-color-btn');
 const colorPalette = document.querySelectorAll('.color-palette');
+const colorCOde = document.querySelectorAll('h3');
 //from nodeList To Array
 let arrayOfColorPalette = [...colorPalette];
+let arrayOfColorCode = [...colorCOde];
 
 //GENERATE RANDOM RGB NUMBERS
 function rbgValues() {
@@ -20,7 +22,7 @@ function rbgValues() {
 //Button Clicked
 colorBtn.addEventListener('click',()=>{
     console.log('button working');//Debugging sake
-
+    let index=0;
     //Apply to each color palette
     arrayOfColorPalette.forEach((colorPalette)=>{
         //Generate Random Rgb Numbers for each color palette
@@ -28,5 +30,9 @@ colorBtn.addEventListener('click',()=>{
 
         //Display on browser
         colorPalette.style.cssText+=`background-color: rgb(${red},${green},${blue});`
+
+        //display rbg values
+        arrayOfColorCode[index].innerText=`rgb(${red},${green},${blue})`; //get the h3 element for a specific box (the box you're current on)
+        index++;//makes it possible to get the next box h3 after each iteration
     })
 })
