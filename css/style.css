@@ -23,3 +23,17 @@
     font-family: "Moronic Misfire (BRK)";
     font-size: 5rem;
 }
+
+.generate-color-btn{
+/*    background: conic-gradient(20deg,pink,red,blue);*/
+    position: relative;
+    left: 10rem;
+    right: 0;
+    background: linear-gradient(20deg, #fb4e4e, #3838ff, #06cc06);
+    border: none;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.35);
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
