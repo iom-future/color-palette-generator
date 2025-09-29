@@ -1,0 +1,25 @@
+.body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.color-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-rows: repeat(auto-fill,20rem);
+    gap: 2rem;
+}
+.color-box{
+ /*   border: 1px solid black;*/
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.35);
+}
+.color-palette{
+    height: 50%;
+    width:100%;
+    background-color: blue ;
+}
+.color-sec-header{
+    text-align: center;
+    font-family: "Moronic Misfire (BRK)";
+    font-size: 5rem;
+}
