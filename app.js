@@ -21,7 +21,7 @@ function rbgValues() {
 
 //Button Clicked
 colorBtn.addEventListener('click',()=>{
-    console.log('button working');//Debugging sake
+   /* console.log('button working');*///Debugging sake
     let index=0;
     //Apply to each color palette
     arrayOfColorPalette.forEach((colorPalette)=>{
